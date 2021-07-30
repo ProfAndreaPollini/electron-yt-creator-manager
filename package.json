@@ -1,0 +1,36 @@
+{
+  "name": "electron-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "npx  electron-packager ./ electron-boilerplate --platform=win32 --arch=ia32 --out=release-build --version-string.ProductName=\"Electron Boilerplate\"",
+    "clean": "rimraf release-build*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@babel/register": "^7.14.5",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "electron": "^13.1.7",
+    "electron-packager": "^15.3.0",
+    "ts-loader": "^9.2.4",
+    "typescript": "^4.3.5",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2"
+  }
+}
